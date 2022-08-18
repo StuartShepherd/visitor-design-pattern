@@ -1,15 +1,14 @@
-﻿namespace VisitorDesignPattern
+﻿namespace VisitorDesignPattern;
+
+public class Client
 {
-    public class Client
+    public static void ClientCode(
+        List<IComponent> components, 
+        IVisitor visitor)
     {
-        public static void ClientCode(
-            List<IComponent> components, 
-            IVisitor visitor)
+        foreach (var component in components)
         {
-            foreach (var component in components)
-            {
-                component.Accept(visitor);
-            }
+            component.Accept(visitor);
         }
     }
 }

@@ -1,7 +1,6 @@
-﻿namespace VisitorDesignPattern
+﻿namespace VisitorDesignPattern;
+
+public interface IComponent
 {
-    public interface IComponent
-    {
-        void Accept(IVisitor visitor);
-    }
+    void Accept(IVisitor visitor);
 }

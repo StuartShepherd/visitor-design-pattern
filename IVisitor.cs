@@ -1,8 +1,7 @@
-﻿namespace VisitorDesignPattern
+﻿namespace VisitorDesignPattern;
+
+public interface IVisitor
 {
-    public interface IVisitor
-    {
-        void VisitConcreteComponentAlpha(ConcreteComponentAlpha element);
-        void VisitConcreteComponentBeta(ConcreteComponentBeta element);
-    }
+    void VisitConcreteComponentAlpha(ConcreteComponentAlpha element);
+    void VisitConcreteComponentBeta(ConcreteComponentBeta element);
 }
